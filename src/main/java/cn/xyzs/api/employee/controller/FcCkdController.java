@@ -1,7 +1,7 @@
 package cn.xyzs.api.employee.controller;
 
-import cn.xyzs.api.employee.pojo.XyClbFcCkdMain;
 import cn.xyzs.api.employee.service.FcCkdService;
+import cn.xyzs.common.pojo.XyClbFcCkdMain;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

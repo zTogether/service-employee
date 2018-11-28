@@ -1,8 +1,8 @@
 package cn.xyzs.api.employee.service;
 
 import cn.xyzs.api.employee.mapper.*;
-import cn.xyzs.api.employee.pojo.*;
-import cn.xyzs.api.employee.pojo.XyClbZcDb;
+import cn.xyzs.common.pojo.*;
+import com.codingapi.tx.annotation.ITxTransaction;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class GoodService {
+public class GoodService implements ITxTransaction {
 
     @Resource
     private XyClbZcFlMapper xyClbZcFlMapper;
@@ -52,6 +52,7 @@ public class GoodService {
      * @param: [zcflCode]
      * @return: java.util.Map<java.lang.String,java.lang.Object>
      */
+    @Transactional
     public  Map<String, Object> getSubdirectory(String zcflCode){
         Map<String, Object> resultMap = new HashMap<>();
         Map<String, Object> obj = new HashMap<>();

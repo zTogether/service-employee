@@ -1,6 +1,6 @@
 package cn.xyzs.api.employee.mapper;
 
-import cn.xyzs.api.employee.pojo.XyPgWaiter;
+import cn.xyzs.common.pojo.XyPgWaiter;
 import org.apache.ibatis.annotations.*;
 import tk.mybatis.mapper.common.Mapper;
 

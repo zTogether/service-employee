@@ -1,6 +1,6 @@
 package cn.xyzs.api.employee.mapper;
 
-import cn.xyzs.api.employee.pojo.MvCommoMenu;
+import cn.xyzs.common.pojo.MvCommoMenu;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;

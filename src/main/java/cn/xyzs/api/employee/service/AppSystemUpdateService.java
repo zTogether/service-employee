@@ -1,7 +1,7 @@
 package cn.xyzs.api.employee.service;
 
 import cn.xyzs.api.employee.mapper.MvSysConfigMapper;
-import cn.xyzs.api.employee.util.PropertiesUtil;
+import cn.xyzs.common.util.PropertiesUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

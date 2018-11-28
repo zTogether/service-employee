@@ -1,7 +1,7 @@
 package cn.xyzs.api.employee.service;
 
 import cn.xyzs.api.employee.mapper.*;
-import cn.xyzs.api.employee.pojo.XyPg;
+import cn.xyzs.common.pojo.XyPg;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

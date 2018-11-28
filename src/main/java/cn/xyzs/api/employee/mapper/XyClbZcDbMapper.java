@@ -1,7 +1,10 @@
 package cn.xyzs.api.employee.mapper;
 
-import cn.xyzs.api.employee.pojo.XyClbZcDb;
-import org.apache.ibatis.annotations.*;
+import cn.xyzs.common.pojo.XyClbZcDb;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Result;
+import org.apache.ibatis.annotations.Results;
+import org.apache.ibatis.annotations.Select;
 
 import java.sql.SQLException;
 import java.util.List;

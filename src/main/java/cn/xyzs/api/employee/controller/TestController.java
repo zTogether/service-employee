@@ -1,8 +1,8 @@
 package cn.xyzs.api.employee.controller;
 
-import cn.xyzs.api.employee.pojo.TRole;
 import cn.xyzs.api.employee.service.RoleService;
 import cn.xyzs.api.employee.service.UserService;
+import cn.xyzs.common.pojo.TRole;
 import com.github.pagehelper.PageInfo;
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,6 +1,6 @@
 package cn.xyzs.api.employee.mapper;
 
-import cn.xyzs.api.employee.pojo.XyClbZcOrderListFree;
+import cn.xyzs.common.pojo.XyClbZcOrderListFree;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.jdbc.SQL;
 import org.apache.ibatis.mapping.FetchType;

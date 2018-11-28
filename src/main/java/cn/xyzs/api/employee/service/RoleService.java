@@ -1,7 +1,7 @@
 package cn.xyzs.api.employee.service;
 
 import cn.xyzs.api.employee.mapper.RoleMapper;
-import cn.xyzs.api.employee.pojo.TRole;
+import cn.xyzs.common.pojo.TRole;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.stereotype.Service;

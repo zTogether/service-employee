@@ -1,11 +1,11 @@
 package cn.xyzs.api.employee.service;
 
 import cn.xyzs.api.employee.mapper.*;
-import cn.xyzs.api.employee.pojo.TUser;
-import cn.xyzs.api.employee.pojo.XyCustomerInfo;
-import cn.xyzs.api.employee.pojo.XyGcbGrxx;
-import cn.xyzs.api.employee.pojo.XyRole;
-import cn.xyzs.api.employee.util.MD5Util;
+import cn.xyzs.common.pojo.TUser;
+import cn.xyzs.common.pojo.XyCustomerInfo;
+import cn.xyzs.common.pojo.XyGcbGrxx;
+import cn.xyzs.common.pojo.XyRole;
+import cn.xyzs.common.util.MD5Util;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

@@ -1,8 +1,8 @@
 package cn.xyzs.api.employee.controller.getui;
 
-import cn.xyzs.api.employee.pojo.API.ClientAPI;
 import cn.xyzs.api.employee.service.getui.ClientService;
-import cn.xyzs.api.employee.util.GetuiUtil;
+import cn.xyzs.common.pojo.API.ClientAPI;
+import cn.xyzs.common.util.GetuiUtil;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

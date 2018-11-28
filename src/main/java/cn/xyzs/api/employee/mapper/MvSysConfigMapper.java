@@ -1,7 +1,10 @@
 package cn.xyzs.api.employee.mapper;
 
-import cn.xyzs.api.employee.pojo.MvSysConfig;
-import org.apache.ibatis.annotations.*;
+import cn.xyzs.common.pojo.MvSysConfig;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.sql.SQLException;
