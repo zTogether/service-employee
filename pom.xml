@@ -32,8 +32,17 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
 		</dependency>
 
 		<dependency>
@@ -61,12 +70,6 @@
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
 			<version>1.2.5</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
-		<dependency>
-			<groupId>com.mchange</groupId>
-			<artifactId>c3p0</artifactId>
-			<version>0.9.5.2</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.oracle/ojdbc -->
@@ -96,12 +99,6 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-		<!--短信接口-->
-		<dependency>
-			<groupId>com.github.qcloudsms</groupId>
-			<artifactId>qcloudsms</artifactId>
-			<version>1.0.5</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
 		<dependency>
 			<groupId>redis.clients</groupId>
@@ -118,30 +115,7 @@
 			<groupId>com.jayway.jsonpath</groupId>
 			<artifactId>json-path</artifactId>
 		</dependency>
-		<!--个推-->
-		<!-- https://mvnrepository.com/artifact/com.gexin.platform/gexin-rp-sdk-http -->
-		<dependency>
-			<groupId>com.gexin.platform</groupId>
-			<artifactId>gexin-rp-sdk-http</artifactId>
-			<version>4.0.1.7</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.gexin.platform/gexin-rp-sdk-base -->
-		<dependency>
-			<groupId>com.gexin.platform</groupId>
-			<artifactId>gexin-rp-sdk-base</artifactId>
-			<version>4.0.0.12</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.gexin.platform/gexin-rp-sdk-template -->
-		<dependency>
-			<groupId>com.gexin.platform</groupId>
-			<artifactId>gexin-rp-sdk-template</artifactId>
-			<version>4.0.0.6</version>
-		</dependency>
-		<dependency>
-			<groupId>com.gexin.platform</groupId>
-			<artifactId>gexin-rp-fastjson</artifactId>
-			<version>1.0.0.1</version>
-		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
 		<dependency>
 			<groupId>com.google.protobuf</groupId>
@@ -153,8 +127,7 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.49</version>
 		</dependency>
-
-		<!--分布式事物-->
+		<!--分布式事物
 		<dependency>
 			<groupId>com.codingapi</groupId>
 			<artifactId>transaction-springcloud</artifactId>
@@ -178,11 +151,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>cn.xyzs</groupId>
-			<artifactId>pt-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		-->
 	</dependencies>
 
 	<dependencyManagement>
