@@ -1,6 +1,6 @@
 package cn.xyzs.api.employee.service.sys;
 
-import cn.xyzs.api.employee.utils.XySqlUtil;
+import cn.xyzs.api.employee.utils.XySqlUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ public class XyInitService {
         List<LinkedHashMap<String,Object>> list = new ArrayList<>();
         String sql = "select USER_ID,USER_CODE,USER_NAME,USER_TEL from XY_USER where IS_USED = 1";
         try {
-            list = XySqlUtil.createSql(sql,null);
+            list = XySqlUtils.createSql(sql,null);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -28,7 +28,7 @@ public class XyInitService {
         List<LinkedHashMap<String,Object>> list = new ArrayList<>();
         String sql = "select ROLE_ID,ROLE_NAME,ROLE_TYPE from XY_ROLE";
         try {
-            list = XySqlUtil.createSql(sql,null);
+            list = XySqlUtils.createSql(sql,null);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -4,12 +4,11 @@ import cn.xyzs.api.employee.entity.po.sys.XySysWorkActive;
 import cn.xyzs.api.employee.entity.po.sys.XySysWorkNode;
 import cn.xyzs.api.employee.mapper.sys.flow.XySysWorkActiveMapper;
 import cn.xyzs.api.employee.mapper.sys.flow.XySysWorkNodeMapper;
-import cn.xyzs.api.employee.utils.XySqlUtil;
+import cn.xyzs.api.employee.utils.XySqlUtils;
 import com.alibaba.fastjson.JSON;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
-import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -202,7 +201,7 @@ public class XyWorkManager {
                 "order by NODE_ADDTIME ASC";
         List<LinkedHashMap<String,Object>> list = null;
         try {
-            list = XySqlUtil.createSql(sql,map);
+            list = XySqlUtils.createSql(sql,map);
             System.err.println(JSON.toJSONString(list));
         } catch (Exception e) {
             e.printStackTrace();

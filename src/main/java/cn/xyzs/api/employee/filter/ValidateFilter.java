@@ -1,7 +1,7 @@
 package cn.xyzs.api.employee.filter;
 
 import cn.xyzs.api.employee.bean.AjaxResponseBody;
-import cn.xyzs.api.employee.utils.XySqlUtil;
+import cn.xyzs.api.employee.utils.XySqlUtils;
 import com.alibaba.fastjson.JSON;
 
 import javax.servlet.*;
@@ -43,7 +43,7 @@ public class ValidateFilter implements Filter {
             //版本号校验
             String newVersion = null;
             try {
-                List<LinkedHashMap<String, Object>> versions = XySqlUtil.createSql("SELECT v.VERSION_CODE from XY_SYS_APP_VERSION v\n" +
+                List<LinkedHashMap<String, Object>> versions = XySqlUtils.createSql("SELECT v.VERSION_CODE from XY_SYS_APP_VERSION v\n" +
                         "WHERE VERSION_ID = (\n" +
                         "\tSELECT MAX(VERSION_ID) from XY_SYS_APP_VERSION\n" +
                         ")",null);

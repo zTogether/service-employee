@@ -2,6 +2,10 @@ package cn.xyzs.api.employee.bean;
 
 import java.io.Serializable;
 
+/**
+ * Ajax响应体
+ * @author zhou
+ */
 public class AjaxResponseBody implements Serializable{
 
     private String status;

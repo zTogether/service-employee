@@ -9,7 +9,7 @@ package cn.xyzs.api.employee.enums;
 public enum ResultEnum {
 
     UNKONW_ERROR(-1,"未知错误"),
-    OK(0, "OK"),
+    OK(1, "OK"),
     IS404_ERROR(400,"404错误"),
     IS500_ERROR(500,"500错误"),
     JOURNAL_LOG_ERROR(320,"日志注解错误"),

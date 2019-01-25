@@ -8,12 +8,12 @@ import javax.annotation.PostConstruct;
 import java.util.*;
 
 @Component
-public class XySqlUtil {
+public class XySqlUtils {
 
 	@Autowired
 	private BaseMapper baseMapper;
 	
-	private static XySqlUtil sqlUtil;
+	private static XySqlUtils sqlUtil;
 
 
 	@PostConstruct

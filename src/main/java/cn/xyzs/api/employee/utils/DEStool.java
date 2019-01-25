@@ -11,7 +11,7 @@ import javax.crypto.spec.DESKeySpec;
 
 /**
  * 	加解密（通过密钥,加解密）
- * @author Administrator
+ * @author zhou
  *
  */
 public class DEStool {
@@ -58,26 +58,4 @@ public class DEStool {
         cipher.init(Cipher.DECRYPT_MODE, secretKey);
         return new String(cipher.doFinal(Base64.decodeBase64(text.getBytes())));
     }
-
-    public static void main(String[] args) {
-        DEStool tool = new DEStool("xyzs123456");
-        String content = "xyzs123456";
-        System.out.println("原文内容："+content);
-        String encrpt = null;
-        try {
-            encrpt = tool.encrypt(content);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        System.out.println("加密后："+encrpt + ", 长度=" + encrpt.length());
-        String descript =null;
-        try {
-            descript = tool.decrypt(encrpt);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        System.out.println("解密后：" + descript);
-    }
-
 }
